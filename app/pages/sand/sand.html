@@ -1,0 +1,50 @@
+<!--
+  Generated template for the SandValCalcPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Sand Ticket</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-item inset>
+      <ion-label dark >Material:</ion-label>
+      <ion-input type="text" placeholder="0.00" ></ion-input>
+    </ion-item>
+    <ion-item inset>
+      <ion-label dark >Scale Ticket:</ion-label>
+      <ion-input type="text" placeholder="scale ticket" ></ion-input>
+    </ion-item>
+
+    <ion-item inset>
+      <ion-label dark >Mover:</ion-label>
+      <ion-input type="text" placeholder="mover" ></ion-input>
+    </ion-item>
+    <ion-item inset>
+      <ion-label dark >Bin:</ion-label>
+      <ion-input type="text" placeholder="bin" ></ion-input>
+    </ion-item>
+
+    <ion-item inset>
+      <ion-label dark >Net Weight (lbs.):</ion-label>
+      <ion-input ngControl="test2"  type="number" placeholder="netweight"  (blur)="fix(test2)"></ion-input>
+    </ion-item>
+    <ion-item inset>
+      <ion-label dark >Tons:</ion-label>
+      <ion-input  type="number" placeholder="0.00" ng-value="test3"></ion-input>
+    </ion-item>
+
+<ion-item inset>
+  <ion-label dark >Blur:</ion-label>
+  <ion-input (blur)="onBlur($event)" (focus)="onFocus($event)" type="text"></ion-input>
+</ion-item>
+
+
+</ion-content>

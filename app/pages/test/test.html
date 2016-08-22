@@ -1,0 +1,97 @@
+<!--<ion-header  text-center>
+  <ion-navbar  >
+    <ion-title  >Login</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="home">
+
+    <h1>&nbsp;</h1>
+    <h1>&nbsp;</h1>
+  <h2 center text-center> Provision </h2>
+
+<div class="list">
+    <label class="item item-input">
+        <!--<i class="icon ion-search placeholder-icon"></i>-->
+ <!--       <input type="text" >
+    </label>
+</div>
+ <button>ENTER</button>
+
+</ion-content>-->
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>Placeholders</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="button-page">
+
+  <ion-list>
+
+    <ion-item>
+      <ion-input type="text" placeholder="Username"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="password" placeholder="Password"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <div padding>
+    <!--<button (click)="itemTapped($event)" primary block>Sign In</button>-->
+    <button [disabled]="disabledButton" (click)="itemTapped($event)" primary block>Sign In</button>
+  </div>
+  <div padding>
+    <button  (click)="itemTapped2($event)" >Click Here First</button>
+  </div>
+  <div padding>
+    <ion-row height-25>
+      <ion-col width-25>
+        <button class="button-ios-font-size">squ</button>
+      </ion-col>
+      <ion-col width-25>
+        <button primary block>squ</button>
+      </ion-col>
+      <ion-col width-25>
+        <button (click)="gotoTicket($event)" primary block>To Ticket</button>
+      </ion-col>
+      <ion-col width-25>
+        <button primary block>squ</button>
+      </ion-col>
+  </ion-row>
+</div>
+
+<div class="button-bar">
+   <a class="button button-positive">BIGGER</a>
+   <a class="button button-assertive">2</a>
+   <a class="button button-energized">3</a>
+   <a class="button">BIGGER</a>
+</div> 
+
+<ion-row>
+  <ion-toolbar [attr.primary]="isAndroid ? '' : null" no-border-top>
+    <ion-segment [(ngModel)]="pet" [attr.light]="isAndroid ? '' : null">
+      <ion-segment-button value="puppies">
+        Puppies
+      </ion-segment-button>
+      <ion-segment-button value="kittens">
+        Kittens
+      </ion-segment-button>
+      <ion-segment-button value="ducklings">
+        Ducklings
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-row>
+
+
+  
+
+   
+
+
+<!--<div class="bar-footer"></div>-->
+</ion-content>
